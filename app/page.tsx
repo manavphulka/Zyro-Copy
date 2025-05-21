@@ -8,28 +8,10 @@ import { ArrowRight, Calendar, CheckCircle, Clock, Mail, MapPin, MessageSquare, 
 export default function HomePage() {
   return (
     <div className="flex min-h-screen flex-col bg-black text-white">
-      {/* Header - Simplified */}
-      <header className="border-b border-zinc-800 bg-black">
-        <div className="container mx-auto flex h-16 items-center px-4">
-          <div className="flex items-center gap-2">
-            <Image src="/zyro-logo.png" alt="Zyro Logo" width={40} height={40} />
-            <span className="text-xl font-bold">Zyrocopy</span>
-          </div>
-        </div>
-      </header>
-
-      {/* Hero Section */}
+      {/* Hero Section - No header, just centered title */}
       <section className="relative flex min-h-screen flex-col items-center justify-center bg-black px-4 text-center">
-        <div className="absolute inset-0 z-0 opacity-10">
-          <Image
-            src="/placeholder.svg?height=1080&width=1920"
-            alt="Background pattern"
-            fill
-            className="object-cover"
-            priority
-          />
-        </div>
         <div className="container relative z-10 mx-auto max-w-5xl space-y-8">
+          <h2 className="text-2xl font-bold">Zyrocopy</h2>
           <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             We Craft <span className="text-white">Digital Experiences</span> That Drive Results
           </h1>
@@ -86,7 +68,7 @@ export default function HomePage() {
                   Capture leads with engaging, high-converting pop-up forms strategically designed to appear at the
                   perfect moment.
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4 space-y-2 text-white">
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-white" />
                     <span>Exit-intent technology</span>
@@ -111,7 +93,7 @@ export default function HomePage() {
                 <p className="text-gray-300">
                   Craft personalized email journeys that nurture leads and drive conversions with targeted messaging.
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4 space-y-2 text-white">
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-white" />
                     <span>Personalized content</span>
@@ -136,7 +118,7 @@ export default function HomePage() {
                 <p className="text-gray-300">
                   Set up intelligent automation workflows that deliver the right message at the right time, every time.
                 </p>
-                <ul className="mt-4 space-y-2">
+                <ul className="mt-4 space-y-2 text-white">
                   <li className="flex items-center">
                     <CheckCircle className="mr-2 h-4 w-4 text-white" />
                     <span>Drip campaign setup</span>
@@ -204,8 +186,8 @@ export default function HomePage() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold">Sarah Johnson</p>
-                        <p className="text-sm text-gray-400">Marketing Director, Acme Inc</p>
+                        <p className="font-semibold text-white">Sarah Johnson</p>
+                        <p className="text-sm text-white">Marketing Director, Acme Inc</p>
                       </div>
                     </div>
                   </CardContent>
@@ -237,8 +219,8 @@ export default function HomePage() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold">Michael Chen</p>
-                        <p className="text-sm text-gray-400">CEO, TechFlow</p>
+                        <p className="font-semibold text-white">Michael Chen</p>
+                        <p className="text-sm text-white">CEO, TechFlow</p>
                       </div>
                     </div>
                   </CardContent>
@@ -269,8 +251,8 @@ export default function HomePage() {
                         />
                       </div>
                       <div>
-                        <p className="font-semibold">Emma Rodriguez</p>
-                        <p className="text-sm text-gray-400">Founder, GreenLife</p>
+                        <p className="font-semibold text-white">Emma Rodriguez</p>
+                        <p className="text-sm text-white">Founder, GreenLife</p>
                       </div>
                     </div>
                   </CardContent>
@@ -406,13 +388,15 @@ export default function HomePage() {
                 help you achieve them.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="bg-white text-black hover:bg-gray-200">
-                  <Calendar className="mr-2 h-5 w-5" />
-                  Schedule a Meeting
-                </Button>
+                <a href="#calendar">
+                  <Button size="lg" className="bg-white text-black hover:bg-gray-200">
+                    <Calendar className="mr-2 h-5 w-5" />
+                    Schedule a Meeting
+                  </Button>
+                </a>
               </div>
             </div>
-            <div className="w-full max-w-md rounded-lg bg-black p-6 shadow-lg">
+            <div id="calendar" className="w-full max-w-md rounded-lg bg-black p-6 shadow-lg">
               <h3 className="mb-4 text-center text-xl font-bold text-white">Book Your Free Consultation</h3>
               <div className="mb-4 overflow-hidden rounded border border-zinc-800 bg-white">
                 <iframe
@@ -426,7 +410,6 @@ export default function HomePage() {
               <p className="mb-4 text-center text-sm text-gray-300">
                 Select a date and time that works for you, and we'll be in touch to confirm your appointment.
               </p>
-              <Button className="w-full bg-white text-black hover:bg-gray-200">Check Availability</Button>
             </div>
           </div>
         </div>
