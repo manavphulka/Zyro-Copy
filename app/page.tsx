@@ -416,7 +416,7 @@ export default function HomePage() {
               <h3 className="mb-4 text-center text-xl font-bold text-white">Book Your Free Consultation</h3>
               <div className="mb-4 overflow-hidden rounded border border-zinc-800 bg-white">
                 <iframe
-                  src="https://calendar.app.google/TT5161dXVLNKuF3s9?bgcolor=%23ffffff&color=%23000000"
+                  src="https://calendly.com/manav-zyrocopy/30min"
                   style={{ border: 0 }}
                   width="100%"
                   height="600"
