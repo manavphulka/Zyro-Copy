@@ -179,15 +179,15 @@ export default function HomePage() {
                       <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
                         <Image
                           src="/placeholder.svg?height=100&width=100"
-                          alt="Sarah Johnson"
+                          alt="Kenny"
                           width={48}
                           height={48}
                           className="h-full w-full object-cover"
                         />
                       </div>
                       <div>
-                        <p className="font-semibold text-white">Sarah Johnson</p>
-                        <p className="text-sm text-white">Marketing Director, Acme Inc</p>
+                        <p className="font-semibold text-white">Kenny</p>
+                        <p className="text-sm text-white">English Coach</p>
                       </div>
                     </div>
                   </CardContent>
@@ -264,71 +264,6 @@ export default function HomePage() {
                 Download Case Studies <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Portfolio Section */}
-      <section id="portfolio" className="bg-zinc-900 py-24">
-        <div className="container mx-auto px-4">
-          <div className="mb-16 text-center">
-            <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl md:text-5xl">Our Portfolio</h2>
-            <p className="mx-auto max-w-2xl text-lg text-gray-300">
-              Explore some of our recent projects and see how we've helped businesses achieve their marketing goals.
-            </p>
-          </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "E-commerce Email Revamp",
-                category: "Email Flows",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-              {
-                title: "SaaS Lead Generation",
-                category: "Pop Forms",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-              {
-                title: "Retail Loyalty Program",
-                category: "Email Automation",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-              {
-                title: "Tech Conference Promotion",
-                category: "Email Campaigns",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-              {
-                title: "Fitness App Onboarding",
-                category: "Email Flows",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-              {
-                title: "Restaurant Chain Promotions",
-                category: "Pop Forms & Automation",
-                image: "/placeholder.svg?height=600&width=800",
-              },
-            ].map((project, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg">
-                <div className="aspect-w-16 aspect-h-9 relative h-64 w-full">
-                  <Image
-                    src={project.image || "/placeholder.svg"}
-                    alt={project.title}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
-                </div>
-                <div className="absolute bottom-0 left-0 right-0 p-4 text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                  <p className="text-sm font-medium text-gray-300">{project.category}</p>
-                  <h3 className="text-lg font-bold">{project.title}</h3>
-                  <Button variant="link" className="mt-2 p-0 text-white hover:text-gray-300">
-                    View Project <ArrowRight className="ml-1 h-4 w-4" />
-                  </Button>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
