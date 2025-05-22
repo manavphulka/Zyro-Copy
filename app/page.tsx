@@ -3,7 +3,18 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { ArrowRight, Calendar, CheckCircle, Clock, Mail, MapPin, MessageSquare, Send, Star } from "lucide-react"
+import {
+  ArrowRight,
+  Calendar,
+  CheckCircle,
+  Clock,
+  Download,
+  Mail,
+  MapPin,
+  MessageSquare,
+  Send,
+  Star,
+} from "lucide-react"
 
 export default function HomePage() {
   return (
@@ -260,9 +271,12 @@ export default function HomePage() {
               </TabsContent>
             </Tabs>
             <div className="mt-8 text-center">
-              <Button className="bg-white text-black hover:bg-gray-200">
-                Download Case Studies <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              <a href="/zyrocopy-case-study.txt" download="ZyroCopy-Case-Study.txt">
+                <Button className="bg-white text-black hover:bg-gray-200">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Case Studies
+                </Button>
+              </a>
             </div>
           </div>
         </div>
