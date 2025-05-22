@@ -271,7 +271,7 @@ export default function HomePage() {
               </TabsContent>
             </Tabs>
             <div className="mt-8 text-center">
-              <a href="/zyrocopy-case-study.txt" download="ZyroCopy-Case-Study.txt">
+              <a href="/zyrocopy-case-study.txt" download="ZyroCopy-Case-Study.pdf">
                 <Button className="bg-white text-black hover:bg-gray-200">
                   <Download className="mr-2 h-4 w-4" />
                   Download Case Studies
