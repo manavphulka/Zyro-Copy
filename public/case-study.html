@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZyroCopy Case Study</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: #000;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+    }
+    
+    h1, h2, h3 {
+      color: #000;
+      font-weight: 700;
+    }
+    
+    h1 {
+      font-size: 28px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-top: 30px;
+      border-bottom: 2px solid #000;
+      padding-bottom: 5px;
+    }
+    
+    h3 {
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 20px;
+    }
+    
+    .problem, .solution, .results {
+      margin-bottom: 40px;
+    }
+    
+    .results ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .results li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+    
+    .results li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #000;
+      font-size: 20px;
+      line-height: 1;
+    }
+    
+    .chart {
+      margin: 30px 0;
+    }
+    
+    .chart-title {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    
+    .chart-container {
+      display: flex;
+      align-items: flex-end;
+      height: 250px;
+      margin-top: 20px;
+      justify-content: center;
+      border-bottom: 2px solid #000;
+      padding-bottom: 10px;
+    }
+    
+    .chart-bar {
+      width: 80px;
+      margin: 0 20px;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      color: white;
+      font-weight: 600;
+      padding: 10px 0;
+    }
+    
+    .chart-label {
+      margin-top: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    .solution ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    
+    .solution li {
+      margin-bottom: 15px;
+      padding-left: 25px;
+      position: relative;
+    }
+    
+    .solution li:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: #000;
+      font-size: 20px;
+      line-height: 1;
+    }
+    
+    .footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #000;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+    
+    .print-instructions {
+      background-color: #f8f8f8;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 30px;
+      border: 1px solid #eee;
+    }
+    
+    .print-instructions h3 {
+      margin-top: 0;
+    }
+    
+    @media print {
+      body {
+        padding: 0;
+      }
+      
+      .print-instructions {
+        display: none;
+      }
+      
+      .chart-bar {
+        box-shadow: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Team Zyro</h1>
+    <h1>Zyro - Copy</h1>
+    <h2>How we helped Kenny in her English coaching business</h2>
+  </div>
+
+  <div class="problem">
+    <h2>The Problem</h2>
+    <p>Kenny was a highly skilled English-speaking coach, delivering real transformation to her students, 
+    but she struggled to turn attention into clients.</p>
+    <p>Her content was helpful, but her messaging lacked clarity and emotional pull. She was attracting interest, but not 
+    converting high-ticket leads, and international clients were barely trickling in. There was no consistent email 
+    strategy, and warm leads weren't being nurtured effectively.</p>
+    <p>The result? Missed revenue, inconsistent bookings, and low conversion from her traffic.</p>
+  </div>
+
+  <div class="chart">
+    <div class="chart-title">Her Open rates after Hiring us</div>
+    <div class="chart-container">
+      <div>
+        <div class="chart-bar" style="height: 31%; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">11.5%</div>
+        <div class="chart-label">March</div>
+      </div>
+      <div>
+        <div class="chart-bar" style="height: 65%; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">24%</div>
+        <div class="chart-label">April</div>
+      </div>
+      <div>
+        <div class="chart-bar" style="height: 100%; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">37%</div>
+        <div class="chart-label">May</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="solution">
+    <h2>Our Solution</h2>
+    <p>We stepped in with a complete email marketing framework through ZyroCopy.</p>
+    <ul>
+      <li>Strategic Messaging Overhaul</li>
+      <li>Email Funnel Automation</li>
+      <li>Global Conversion Strategy</li>
+    </ul>
+  </div>
+
+  <div class="results">
+    <h2>The Results?</h2>
+    <ul>
+      <li>2x Client's Booked Within 3 Weeks</li>
+      <li>Consistent International Inquiries from LinkedIn and email</li>
+      <li>Email List Engagement Boosted by 270%</li>
+      <li>Clarity = Confidence: She finally had a brand that sold for her</li>
+    </ul>
+  </div>
+
+  <div class="footer">
+    <p>zyrocopy.com</p>
+    <p>manav@zyrocopy.com</p>
+    <p>ZyroCopy</p>
+  </div>
+
+  <div class="print-instructions">
+    <h3>How to save as PDF:</h3>
+    <ol>
+      <li>Press Ctrl+P (Windows) or Cmd+P (Mac) to open the print dialog</li>
+      <li>Select "Save as PDF" as the destination</li>
+      <li>Click "Save" to download the PDF version</li>
+    </ol>
+    <p><strong>Note:</strong> These instructions won't appear in the PDF when you print.</p>
+  </div>
+</body>
+</html>
