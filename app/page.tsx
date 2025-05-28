@@ -162,13 +162,13 @@ export default function HomePage() {
             <Tabs defaultValue="testimonial1" className="w-full">
               <TabsList className="mx-auto grid w-full max-w-md grid-cols-3 bg-zinc-900">
                 <TabsTrigger value="testimonial1" className="data-[state=active]:bg-zinc-800">
-                  Acme Inc
+                  Lead Gen
                 </TabsTrigger>
                 <TabsTrigger value="testimonial2" className="data-[state=active]:bg-zinc-800">
-                  TechFlow
+                  Open Rate
                 </TabsTrigger>
                 <TabsTrigger value="testimonial3" className="data-[state=active]:bg-zinc-800">
-                  GreenLife
+                  Brand Value
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="testimonial1" className="mt-8">
@@ -189,7 +189,7 @@ export default function HomePage() {
                     <div className="flex items-center justify-center">
                       <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
                         <Image
-                          src="/placeholder.svg?height=100&width=100"
+                          src="/images/kenny.jpg"
                           alt="Kenny"
                           width={48}
                           height={48}
@@ -222,16 +222,16 @@ export default function HomePage() {
                     <div className="flex items-center justify-center">
                       <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
                         <Image
-                          src="/placeholder.svg?height=100&width=100"
-                          alt="Michael Chen"
+                          src="/images/robin.jpg"
+                          alt="Robin Brown"
                           width={48}
                           height={48}
                           className="h-full w-full object-cover"
                         />
                       </div>
                       <div>
-                        <p className="font-semibold text-white">Michael Chen</p>
-                        <p className="text-sm text-white">CEO, TechFlow</p>
+                        <p className="font-semibold text-white">Robin Brown</p>
+                        <p className="text-sm text-white"> Marketing Executive</p>
                       </div>
                     </div>
                   </CardContent>
@@ -254,15 +254,15 @@ export default function HomePage() {
                     <div className="flex items-center justify-center">
                       <div className="mr-4 h-12 w-12 overflow-hidden rounded-full">
                         <Image
-                          src="/placeholder.svg?height=100&width=100"
-                          alt="Emma Rodriguez"
+                          src="/images/emma.jpg"
+                          alt="Emma Starlet"
                           width={48}
                           height={48}
                           className="h-full w-full object-cover"
                         />
                       </div>
                       <div>
-                        <p className="font-semibold text-white">Emma Rodriguez</p>
+                        <p className="font-semibold text-white">Emma Starlet</p>
                         <p className="text-sm text-white">Founder, GreenLife</p>
                       </div>
                     </div>
